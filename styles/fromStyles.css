@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+/* Barra de navegación */
+nav {
+    width: 100%;
+    background-color: rgb(65, 63, 63);
+    display: flex;
+    position: relative;
+    z-index: 4;
+    min-height: 9vh;
+    max-height: 15vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Botones de navegación */
+nav a, h1 {
+    
+    flex-wrap: wrap;
+    transition: all 500ms ease-out;
+}
+
+/* Efectos */
+nav a, h1:hover {
+    color: red;
+    transition: all 500ms ease-out;
+    scale: 1.05;
+}
+
+/* Logo de navegación */
+nav img {
+    width: 50%;     
+    margin: auto auto;       
+}
+
+/* Efectos */
+nav img:hover {
+    transition: all 500ms ease-out;
+    scale: 1.2;
+}
+
+/* Buscador */
+nav .buscador {
+    display: flex;
+    width: 10%;
+}
+
+/* Imagen lupa */
+nav .buscador img {
+    width: 20%;
+}
+
+/* Barra de busqueda */
+input {
+    margin: auto auto;
+    border-radius: 10px;
+    width: 150px;
+    height: 50%;
+    color:black;
+    padding: 0.5em;
+}
+
+main {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+
+/* Formulario */
+fieldset {
+    margin: auto auto;
+    width: 50%;
+    height: 75vh;
+    border: 2px solid grey;
+    border-radius: 15px;
+    background-color: rgb(65, 63, 63);
+}
+
+fieldset form {
+    padding-top: 1em;
+    display: block;
+    text-align: center;
+}
+
+/* Introdución de datos */
+input {
+    width: 100%;
+    margin: 0.5em 0 0.5em 0em;
+    border: 1px solid red;
+    outline: none;
+}
+
+.infoContainers {
+    margin: 2em auto;
+    width: 40%;
+    text-align: left;
+}
+
+/* Boton */
+button {
+    color: white;
+    width: 7rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    background-color:red;
+    border: none;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    margin-top: 1rem;
+    margin-left: 1rem;
+    transition: all 500ms ease-out;
+}
+
+/* Efectos */
+button:hover {
+    scale: 1.05;
+    transition: all 500ms ease-out;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 4;
+    min-height: 20vh;
+    max-height: 30vh;
+    background-color: rgb(65, 63, 63);
+    display: inline-block;
+}
+
+footer div  {
+    width: 50%;
+    height: 30%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.topLine {
+    margin-top: 60px;
+    border-top: 1px solid;
+}
+
+.botLine {
+    border-bottom: 1px solid;
+}

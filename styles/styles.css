@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+/* Barra de navegación */
+nav {
+    width: 100%;
+    background-color: rgb(65, 63, 63);
+    display: flex;
+    position: relative;
+    z-index: 4;
+    min-height: 9vh;
+    max-height: 15vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Botones de navegación */
+nav a, h1 {
+    
+    flex-wrap: wrap;
+    transition: all 500ms ease-out;
+}
+
+/* Efectos */
+nav a, h1:hover {
+    color: red;
+    transition: all 500ms ease-out;
+    scale: 1.05;
+}
+
+/* Logo de navegación */
+nav img {
+    width: 50%;     
+    margin: auto auto;
+    transition: all 500ms ease-out;       
+}
+
+/* Efectos */
+nav img:hover {
+    transition: all 500ms ease-out;
+    scale: 1.2;
+}
+
+/* Buscador */
+nav .buscador {
+    display: flex;
+    width: 10%;
+}
+
+/* Imagen lupa */
+nav .buscador img {
+    width: 50%;
+}
+
+/* Barra de busqueda */
+input {
+    margin: auto auto;
+    border-radius: 10px;
+    width: 150px;
+    height: 50%;
+    color:black;
+    padding: 0.5em;
+    outline: none;
+}
+
+/* Barra Informativa */
+.barraInformativa {
+    width: 100%;
+    height: 10vh;
+    z-index: 4;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+/* Titulo de la barra */
+.barraInformativa h2 {
+    font-size:xx-large;
+}
+
+/* Contenido Principal */
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex; 
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 3;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+/* Efectos */
+main::before {
+    content:'';
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 2;
+}
+
+/* Fondo de la pagina */
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: 1;
+}
+
+/* Contenedores de los equipos */
+main .teamContainer {
+    position: relative;
+    width: 700px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgb(0 0 0 / 30%);  
+    flex-wrap: wrap;
+    margin: 40px;
+    background-color: white;
+    transition: all 500ms ease-out;
+    z-index: 2;
+}
+
+/* Efectos */
+main figure:hover{
+    transition: all 500ms ease-out;
+    scale: 1.05;
+    box-shadow: 0 10px 25px rgb(0 0 0 / 60%);
+} 
+
+/* Imagenes de los contenedores */
+main figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 500ms ease-out;
+}
+
+/* EFECTOS PRINCIPALES */
+
+/* Efectos capa principal de los contenedores LOGOS*/
+main figure a:hover > .logoEffect {
+    opacity: 0.3; /* Borrado */
+    /* visibility: hidden; */
+    filter: blur(5px); /* Difuminado */
+
+}
+
+/* Capa secundaria de los contenedores EQUIPOS */
+main figure .teamEffect {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    filter: blur(5px);
+}
+
+/* Efectos capa secundaria */
+main figure a:hover > .teamEffect {
+    opacity: 1;
+    visibility: visible;
+    filter: blur(0); 
+}
+
+/* Maregen de la barra inferior */
+main .barraInformativa {
+    margin-top: 3em;
+}
+
+/* Contenedores de los productos */
+main .productos {
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    width: 400px;
+    height: 350px;
+    margin: 70px;
+    border-radius: 15px;
+}
+
+/* Footer */
+footer {
+    margin-top: 2em;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 4;
+    min-height: 20vh;
+    max-height: 30vh;
+    background-color: rgb(65, 63, 63);
+    display: inline-block;
+}
+
+/* Contenedor de redes sociales */
+footer div  {
+    width: 50%;
+    height: 30%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.topLine {
+    margin-top: 60px;
+    border-top: 1px solid;
+}
+
+.botLine {
+    border-bottom: 1px solid;
+}
+
+footer a:hover {
+    scale: 1.05;
+    transition: all 500ms ease-out;
+}
+
+footer a:hover > img{
+    box-shadow: 0 10px 25px rgb(0 0 0 / 60%);  
+}
